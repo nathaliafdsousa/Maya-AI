@@ -51,7 +51,7 @@ Após os testes, registre suas conclusões:
 
 - Tempo de resposta: otimizar chamadas e reduzir latência para tornar a interação mais fluida.
 
-- LLM mais robusto: utilizar um modelo mais avançado e escalável, que não dependa apenas de execução loca
+- LLM mais robusto: utilizar um modelo mais avançado e escalável, que não dependa apenas de execução local
 
 ---
 
