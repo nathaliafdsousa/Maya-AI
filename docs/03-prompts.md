@@ -130,11 +130,12 @@ Se desejar, posso verificar suas últimas transações e alertar sobre movimenta
 
 - Observação 1: Ajustei o system prompt para deixar explícito que o agente só responde com base nos dados mockados (CSV/JSON).
 
-- Por quê? No início, o prompt estava genérico e poderia levar a respostas vagas ou inventadas. Com essa regra, o agente evita alucinações e mantém foco na base de conhecimento.
+ - Por quê? No início, o prompt estava genérico e poderia levar a respostas vagas ou inventadas. Com essa regra, o agente evita alucinações e mantém foco na base de conhecimento.
 
 - Observação 2: Incluí cenários de edge cases (perguntas fora do contexto financeiro e pedidos de dados sensíveis).
+- Por quê? Assim verificamos que o agente não expõe dados sensíveis do cliente.
 
-Por quê? Para garantir que o agente saiba recusar educadamente e reforçar sua função antifraude, sem expor informações indevidas.
+
 - Observação 3: Adicionei respostas alternativas quando o agente não encontra dados (fallback).
 
 - Por quê? Assim o agente não fica “travado” e pode informar ao usuário que não há registros, mantendo transparência.
