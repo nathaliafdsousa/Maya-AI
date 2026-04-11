@@ -57,7 +57,7 @@ Após instalar, verifique se está funcionando:
   ollama --version
 
 Execute a aplicação:
-  streamlit run .\src\ app.py
+  streamlit run .\src\app.py
 ````
 
 
