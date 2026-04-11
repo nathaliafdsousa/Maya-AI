@@ -98,6 +98,7 @@ if st.button("Enviar") and not st.session_state.busy:
         st.session_state.busy = True
         st.session_state.resposta = gerar_resposta(pergunta, contexto, system_prompt)
         st.session_state.busy = False
+    else:
         st.write("Por favor, insira uma pergunta.")
         
 if st.session_state.resposta:
