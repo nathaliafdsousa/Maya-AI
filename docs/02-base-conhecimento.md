@@ -8,7 +8,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e identificar reincidência de fraudes ou problemas recorrentes|
 | `perfil_investidor.json` | JSON | Personalizar recomendações e alertas conforme o perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil,incluindoi opções de proteção antifraude e segurança |
+| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil,incluindo opções de proteção antifraude e segurança |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente,detectar transações suspeitas e gerar alertas de risco |
 | `dispositivo_cliente.json` | JSON | Monitorar dispositivos conectados,identificar acessos suspeitos e reforçar segurança digital |
 
@@ -39,7 +39,7 @@ Durante o desenvolvimento do agente, os dados mockados foram modificados e expan
 
 - Expandido com seção preferencias_seguranca (alertas desejados, canal preferido, seguro antifraude).
 
-- Inclusão de historico_fraudes para contextualizar riscos anteriores.
+- Inclusão de historico fraudes para contextualizar riscos anteriores.
 
 - Mantém metas financeiras, mas agora vinculadas à proteção da reserva de emergência.
 
@@ -55,7 +55,7 @@ Durante o desenvolvimento do agente, os dados mockados foram modificados e expan
 
 = Permite que o agente sugira soluções de proteção quando detectar risco.
 
-📌dispositivos_cliente.json (novo arquivo)
+📌dispositivos_cliente.json 
 
 - Criado para registrar dispositivos cadastrados e acessos suspeitos.
 
@@ -103,6 +103,7 @@ dispositivo = json.load(open('./data/dispositivo_cliente.json'))
 - As respostas passam por validação interna para evitar alucinações.
 
 - O agente cruza informações entre arquivos (ex.: transações + dispositivos + histórico de atendimento) para gerar alertas de fraude contextualizados.
+
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
@@ -110,7 +111,7 @@ dispositivo = json.load(open('./data/dispositivo_cliente.json'))
 
 - Em vez disso, eles são carregados em memória pelo código Python e consultados dinamicamente durante a interação.
 
-- Quando o cliente faz uma pergunta, o agente busca nos arquivos relevantes (ex.: transações, histórico, perfil, dispositivos) e utiliza esses resultados para compor a resposta.
+- Quando o cliente faz uma pergunta, o agente busca nos arquivos relevantes (ex: transações, histórico, perfil, dispositivos) e utiliza esses resultados para compor a resposta.
 
 - Isso garante que o agente não dependa de um prompt fixo e estático, mas sim de dados estruturados que podem ser atualizados ou expandidos.
 

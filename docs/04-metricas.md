@@ -47,7 +47,7 @@ Após os testes, registre suas conclusões:
 - Não apresenta alucinações, mantendo consistência com os dados mockados.
 
 **O que pode melhorar:**
-- nterface da Maya AI: criar uma experiência mais amigável e visualmente atraente para o usuário.
+- Interface da Maya AI: criar uma experiência mais amigável e visualmente atraente para o usuário.
 
 - Tempo de resposta: otimizar chamadas e reduzir latência para tornar a interação mais fluida.
 
